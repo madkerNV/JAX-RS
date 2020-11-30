@@ -1,6 +1,6 @@
-package org.example.madjid.resource;
+package org.example.eigennaam.resource;
 
-import org.example.madjid.domain.Framework;
+import org.example.eigennaam.domain.Framework;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

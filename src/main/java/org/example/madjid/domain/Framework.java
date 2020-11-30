@@ -1,4 +1,4 @@
-package org.example.madjid.domain;
+package org.example.eigennaam.domain;
 
 public class Framework {
     int id;

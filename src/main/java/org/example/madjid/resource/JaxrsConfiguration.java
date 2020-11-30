@@ -1,4 +1,4 @@
-package org.example.madjid.resource;
+package org.example.eigennaam.resource;
 
 
 import javax.ws.rs.ApplicationPath;
