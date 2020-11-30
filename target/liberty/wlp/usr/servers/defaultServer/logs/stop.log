@@ -1,0 +1,13 @@
+
+arg0=--batch-file=--stop
+arg1=stop
+arg2=defaultServer
+exit=1
+
+                 Java home:  C:\Program Files\Java\jdk1.8.0_261\jre
+              Install root:  C:/werkplaats/Jax-RS/target/liberty/wlp/
+          System libraries:  C:/werkplaats/Jax-RS/target/liberty/wlp/lib/
+                 User root:  C:/werkplaats/Jax-RS/target/liberty/wlp/usr/
+                    Config:  C:/werkplaats/Jax-RS/target/liberty/wlp/usr/servers/defaultServer/
+                    Output:  C:/werkplaats/Jax-RS/target/liberty/wlp/usr/servers/defaultServer/
+

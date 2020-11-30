@@ -1,0 +1,10 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1   30-11-20 15:58:18:859 CET   30-11-20 15:58:18:859 CET com.ibm.wsspi.adaptable.module.UnableToAdaptException com.ibm.ws.app.manager.module.internal.ContextRootUtil 43
+                                                                            - C:\werkplaats\Jax-RS\target\liberty\wlp\usr\servers\defaultServer\logs\ffdc\ffdc_20.11.30_15.58.18.0.log
+     1      1   30-11-20 15:58:19:176 CET   30-11-20 15:58:19:176 CET com.ibm.wsspi.adaptable.module.UnableToAdaptException com.ibm.ws.app.manager.war.internal.WARApplicationHandlerImpl 51
+                                                                            - C:\werkplaats\Jax-RS\target\liberty\wlp\usr\servers\defaultServer\logs\ffdc\ffdc_20.11.30_15.58.19.0.log
+     2      1   30-11-20 15:58:19:561 CET   30-11-20 15:58:19:561 CET java.lang.IllegalStateException com.ibm.ws.app.manager.internal.statemachine.StartAction 150
+                                                                            - C:\werkplaats\Jax-RS\target\liberty\wlp\usr\servers\defaultServer\logs\ffdc\ffdc_20.11.30_15.58.19.1.log
+------+------+---------------------------+---------------------------+---------------------------

@@ -1,0 +1,59 @@
+********************************************************************************
+product = Open Liberty 20.0.0.12 (wlp-1.0.47.cl201220201111-0736)
+wlp.install.dir = C:/werkplaats/Jax-RS/target/liberty/wlp/
+java.home = C:\Program Files\Java\jdk1.8.0_261\jre
+java.version = 1.8.0_261
+java.runtime = Java(TM) SE Runtime Environment (1.8.0_261-b12)
+os = Windows 8.1 (6.3; amd64) (nl_NL)
+process = 2756@NSI-PF00JV9Q
+********************************************************************************
+[30-11-20 16:03:54:329 CET] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[30-11-20 16:03:56:950 CET] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 3,35 seconds
+[30-11-20 16:03:57:036 CET] 00000021 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[30-11-20 16:03:58:762 CET] 00000019 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[30-11-20 16:04:04:708 CET] 00000024 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application Jax-RS-1.0-SNAPSHOT.
+[30-11-20 16:04:04:710 CET] 00000024 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The Jax-RS-1.0-SNAPSHOT application is using the loose application definition at the C:\werkplaats\Jax-RS\target\liberty\wlp\usr\servers\defaultServer\dropins\Jax-RS-1.0-SNAPSHOT.war.xml location.
+[30-11-20 16:04:06:566 CET] 00000024 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[30-11-20 16:04:06:746 CET] 00000024 org.jboss.weld.Version                                       I WELD-000900: 2.4.8 (Final)
+[30-11-20 16:04:07:647 CET] 00000024 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: Jax-RS-1.0-SNAPSHOT.
+[30-11-20 16:04:07:653 CET] 00000024 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module Jax-RS-1.0-SNAPSHOT has been bound to default_host.
+[30-11-20 16:04:07:655 CET] 00000024 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:9080/Jax-RS-1.0-SNAPSHOT/
+[30-11-20 16:04:07:771 CET] 00000025 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/Jax-RS-1.0-SNAPSHOT
+[30-11-20 16:04:07:825 CET] 00000025 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[30-11-20 16:04:08:074 CET] 00000025 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application Jax-RS-1.0-SNAPSHOT started in 3,366 seconds.
+[30-11-20 16:04:08:160 CET] 00000021 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 9080.
+[30-11-20 16:04:08:302 CET] 00000021 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [cdi-1.2, ejbLite-3.2, jaxrs-2.0, jaxrsClient-2.0, jdbc-4.1, jndi-1.0, jpa-2.1, jpaContainer-2.1, json-1.0, servlet-3.1].
+[30-11-20 16:04:08:306 CET] 00000021 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 11,357 seconds.
+[30-11-20 16:04:08:307 CET] 00000021 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The defaultServer server is ready to run a smarter planet. The defaultServer server started in 14,710 seconds.
+[30-11-20 16:04:09:304 CET] 00000024 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at C:\werkplaats\Jax-RS\target\liberty\wlp\usr\servers\defaultServer\logs\state\plugin-cfg.xml.
+[30-11-20 16:04:16:477 CET] 00000023 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:9080/Jax-RS-1.0-SNAPSHOT/
+[30-11-20 16:04:16:573 CET] 00000023 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application Jax-RS-1.0-SNAPSHOT has stopped successfully.
+[30-11-20 16:04:16:594 CET] 00000023 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application Jax-RS-1.0-SNAPSHOT.
+[30-11-20 16:04:16:597 CET] 00000023 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The Jax-RS-1.0-SNAPSHOT application is using the loose application definition at the C:\werkplaats\Jax-RS\target\liberty\wlp\usr\servers\defaultServer\dropins\Jax-RS-1.0-SNAPSHOT.war.xml location.
+[30-11-20 16:04:16:651 CET] 00000026 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at C:\werkplaats\Jax-RS\target\liberty\wlp\usr\servers\defaultServer\logs\state\plugin-cfg.xml.
+[30-11-20 16:04:16:957 CET] 00000023 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: Jax-RS-1.0-SNAPSHOT.
+[30-11-20 16:04:16:958 CET] 00000023 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module Jax-RS-1.0-SNAPSHOT has been bound to default_host.
+[30-11-20 16:04:16:959 CET] 00000023 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:9080/Jax-RS-1.0-SNAPSHOT/
+[30-11-20 16:04:16:967 CET] 00000024 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/Jax-RS-1.0-SNAPSHOT
+[30-11-20 16:04:16:967 CET] 00000024 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[30-11-20 16:04:16:974 CET] 00000024 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application Jax-RS-1.0-SNAPSHOT updated in 0,380 seconds.
+[30-11-20 16:04:17:029 CET] 00000021 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at C:\werkplaats\Jax-RS\target\liberty\wlp\usr\servers\defaultServer\logs\state\plugin-cfg.xml.
+[30-11-20 16:04:26:456 CET] 00000024 .ibm.ws.jaxrs.2.0.common:1.0.47.cl201220201111-0736(id=116)] I Setting the server's publish address to be /resources/
+[30-11-20 16:04:27:137 CET] 00000024 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [Jax-RS-1.0-SNAPSHOT] [/Jax-RS-1.0-SNAPSHOT] [org.example.madjid.resource.JaxrsConfiguration]: Initialization successful.
+[30-11-20 16:13:45:954 CET] 00000024 com.ibm.ws.webcontainer.extension                            W SRVE0190E: File not found: /start
+[30-11-20 16:16:09:133 CET] 00000032 com.ibm.ws.config.xml.internal.ConfigRefresher               A CWWKG0016I: Starting server configuration update.
+[30-11-20 16:16:09:287 CET] 00000034 com.ibm.ws.library.internal.SharedLibraryImpl                W CWWKL0012W: The library [library[MySQLLib]] specifies a file with name [eigendirectory/mysql/mysql-connector-java/8.0.22/mysql-connector-java-8.0.22.jar]. This file either does not exist or is incorrectly specified.
+[30-11-20 16:16:09:308 CET] 00000023 com.ibm.ws.config.xml.internal.ConfigRefresher               A CWWKG0017I: The server configuration was successfully updated in 0,187 seconds.
+[30-11-20 16:16:11:156 CET] 00000021 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:9080/Jax-RS-1.0-SNAPSHOT/
+[30-11-20 16:16:11:172 CET] 00000021 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [Jax-RS-1.0-SNAPSHOT] [/Jax-RS-1.0-SNAPSHOT] [org.example.madjid.resource.JaxrsConfiguration]: Destroy successful.
+[30-11-20 16:16:11:268 CET] 00000021 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application Jax-RS-1.0-SNAPSHOT has stopped successfully.
+[30-11-20 16:16:11:316 CET] 00000021 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application Jax-RS-1.0-SNAPSHOT.
+[30-11-20 16:16:11:316 CET] 00000021 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The Jax-RS-1.0-SNAPSHOT application is using the loose application definition at the C:\werkplaats\Jax-RS\target\liberty\wlp\usr\servers\defaultServer\dropins\Jax-RS-1.0-SNAPSHOT.war.xml location.
+[30-11-20 16:16:11:348 CET] 00000033 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at C:\werkplaats\Jax-RS\target\liberty\wlp\usr\servers\defaultServer\logs\state\plugin-cfg.xml.
+[30-11-20 16:16:11:910 CET] 00000021 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: Jax-RS-1.0-SNAPSHOT.
+[30-11-20 16:16:11:910 CET] 00000021 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module Jax-RS-1.0-SNAPSHOT has been bound to default_host.
+[30-11-20 16:16:11:926 CET] 00000021 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:9080/Jax-RS-1.0-SNAPSHOT/
+[30-11-20 16:16:11:926 CET] 00000024 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/Jax-RS-1.0-SNAPSHOT
+[30-11-20 16:16:11:926 CET] 00000024 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[30-11-20 16:16:11:941 CET] 00000024 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application Jax-RS-1.0-SNAPSHOT updated in 0,625 seconds.
+[30-11-20 16:16:12:051 CET] 00000032 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at C:\werkplaats\Jax-RS\target\liberty\wlp\usr\servers\defaultServer\logs\state\plugin-cfg.xml.

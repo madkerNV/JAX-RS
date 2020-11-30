@@ -1,0 +1,208 @@
+------Start of DE processing------ = [30-11-20 15:58:18:893 CET]
+Exception = com.ibm.wsspi.adaptable.module.UnableToAdaptException
+Source = com.ibm.ws.app.manager.module.internal.ContextRootUtil
+probeid = 43
+Stack Dump = com.ibm.wsspi.adaptable.module.UnableToAdaptException: com.ibm.ws.javaee.ddmodel.DDParser$ParseException: CWWKC2272E: An error occurred while parsing the /WEB-INF/web.xml deployment descriptor on line 1. The error message was: ParseError at [row,col]:[1,1]
+Message: Premature end of file.
+	at com.ibm.ws.javaee.ddmodel.web.WebAppEntryAdapter.adapt(WebAppEntryAdapter.java:61)
+	at com.ibm.ws.javaee.ddmodel.web.WebAppEntryAdapter.adapt(WebAppEntryAdapter.java:26)
+	at com.ibm.ws.adaptable.module.internal.AdapterFactoryServiceImpl.adapt(AdapterFactoryServiceImpl.java:231)
+	at com.ibm.ws.adaptable.module.internal.AdaptableEntryImpl.adapt(AdaptableEntryImpl.java:121)
+	at com.ibm.ws.javaee.ddmodel.web.WebAppAdapter.adapt(WebAppAdapter.java:38)
+	at com.ibm.ws.javaee.ddmodel.web.WebAppAdapter.adapt(WebAppAdapter.java:24)
+	at com.ibm.ws.adaptable.module.internal.AdapterFactoryServiceImpl.adapt(AdapterFactoryServiceImpl.java:200)
+	at com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl.adapt(AdaptableContainerImpl.java:174)
+	at com.ibm.ws.javaee.ddmodel.webext.WebExtAdapter.adapt(WebExtAdapter.java:134)
+	at com.ibm.ws.javaee.ddmodel.webext.WebExtAdapter.adapt(WebExtAdapter.java:48)
+	at com.ibm.ws.adaptable.module.internal.AdapterFactoryServiceImpl.adapt(AdapterFactoryServiceImpl.java:200)
+	at com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl.adapt(AdaptableContainerImpl.java:174)
+	at com.ibm.ws.app.manager.module.internal.ContextRootUtil.getContextRoot(ContextRootUtil.java:38)
+	at com.ibm.ws.app.manager.war.internal.WARDeployedAppInfo.<init>(WARDeployedAppInfo.java:60)
+	at com.ibm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl.createDeployedAppInfo(WARDeployedAppInfoFactoryImpl.java:120)
+	at com.ibm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl.createDeployedAppInfo(WARDeployedAppInfoFactoryImpl.java:35)
+	at com.ibm.ws.app.manager.war.internal.WARApplicationHandlerImpl.setUpApplicationMonitoring(WARApplicationHandlerImpl.java:50)
+	at com.ibm.ws.app.manager.internal.statemachine.StartAction.execute(StartAction.java:139)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.enterState(ApplicationStateMachineImpl.java:1317)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.performAction(ApplicationStateMachineImpl.java:1182)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.run(ApplicationStateMachineImpl.java:905)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:239)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.ibm.ws.javaee.ddmodel.DDParser$ParseException: CWWKC2272E: An error occurred while parsing the /WEB-INF/web.xml deployment descriptor on line 1. The error message was: ParseError at [row,col]:[1,1]
+Message: Premature end of file.
+	at com.ibm.ws.javaee.ddmodel.DDParser.parseToRootElement(DDParser.java:429)
+	at com.ibm.ws.javaee.ddmodel.DDParser.parseRootElement(DDParser.java:584)
+	at com.ibm.ws.javaee.ddmodel.web.WebAppDDParser.parse(WebAppDDParser.java:32)
+	at com.ibm.ws.javaee.ddmodel.web.WebAppEntryAdapter.adapt(WebAppEntryAdapter.java:59)
+	... 24 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,1]
+Message: Premature end of file.
+	at com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.next(XMLStreamReaderImpl.java:604)
+	at com.ibm.ws.javaee.ddmodel.DDParser.parseToRootElement(DDParser.java:426)
+	... 27 more
+
+Dump of callerThis
+null
+Dump of objectArray[0]
+Object type = com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl
+  root = class com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl@4afa02e1
+  rootOverlay = class com.ibm.ws.artifact.overlay.internal.DirectoryBasedOverlayContainerImpl@4b8ca970
+    base = class com.ibm.ws.artifact.loose.internal.LooseArchive@32e9e351
+      cacheDir = class java.io.File@13570c2e
+      xmlFile = class java.io.File@4207ba45
+      parent = null
+      cfh = class com.ibm.ws.artifact.loose.internal.LooseContainerFactoryHelper@6d405c96
+      pathInParent = null
+      _entries = class java.util.ArrayList@66116ca6
+      tc = class com.ibm.websphere.ras.TraceComponent@360d5ab
+      artifactNotifier = null
+      serialVersionUID = 345486831272892625
+    maskSet = class java.util.HashSet@28f42048
+      serialVersionUID = -5024744406713321676
+      map = class java.util.HashMap@32a67450
+      PRESENT = class java.lang.Object@5d6d3a7e
+      MAX_ARRAY_SIZE = 2147483639
+    cfHolder = class com.ibm.ws.artifact.overlay.internal.OverlayContainerFactoryImpl@6c236c9f
+    fileOverlayContainer = class com.ibm.ws.artifact.file.internal.FileContainer@322b1efa
+      containerFactoryHolder = class com.ibm.ws.artifact.file.internal.FileContainerFactory@53e710e8
+      parent = null
+      thisInParent = null
+      dir = class java.io.File@451bcbb4
+      cacheDir = class java.io.File@38955b2d
+      isRoot = true
+      root = class com.ibm.ws.artifact.file.internal.FileContainer@322b1efa
+      artifactNotifier = class com.ibm.ws.artifact.file.FileArtifactNotifier@6e5df8ff
+      serialVersionUID = 556130772302156267
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@3b75e16e
+    overlayDirectory = class java.io.File@451bcbb4
+      fs = class java.io.WinNTFileSystem@652b059e
+      path = "C:\werkplaats\Jax-RS\target\liberty\wlp\usr\servers\defaultServer\workarea\org.eclipse.osgi\75\data\cacheAdapt\com.ibm.ws.app.manager_28\.overlay"
+      status = class java.io.File$PathStatus@103aadd4
+      prefixLength = 3
+      separatorChar = \
+      separator = "\"
+      pathSeparatorChar = ;
+      pathSeparator = ";"
+      PATH_OFFSET = 16
+      PREFIX_LENGTH_OFFSET = 12
+      UNSAFE = class sun.misc.Unsafe@5eae53f3
+      serialVersionUID = 301077366599181567
+      filePath = null
+      $assertionsDisabled = true
+    cacheDirForOverlay = class java.io.File@38955b2d
+      fs = class java.io.WinNTFileSystem@652b059e
+      path = "C:\werkplaats\Jax-RS\target\liberty\wlp\usr\servers\defaultServer\workarea\org.eclipse.osgi\75\data\cacheOverlay\com.ibm.ws.app.manager_28"
+      status = class java.io.File$PathStatus@103aadd4
+      prefixLength = 3
+      separatorChar = \
+      separator = "\"
+      pathSeparatorChar = ;
+      pathSeparator = ";"
+      PATH_OFFSET = 16
+      PREFIX_LENGTH_OFFSET = 12
+      UNSAFE = class sun.misc.Unsafe@5eae53f3
+      serialVersionUID = 301077366599181567
+      filePath = null
+      $assertionsDisabled = true
+    overlayNotifier = class com.ibm.ws.artifact.overlay.internal.DirectoryBasedOverlayNotifier@31eaca17
+      root = class com.ibm.ws.artifact.overlay.internal.DirectoryBasedOverlayContainerImpl@4b8ca970
+      overlayContainer = class com.ibm.ws.artifact.file.internal.FileContainer@322b1efa
+      overlaidContainer = class com.ibm.ws.artifact.loose.internal.LooseArchive@32e9e351
+      listeningToContainers = false
+      listeners = class java.util.concurrent.ConcurrentHashMap@1c85489b
+      pathsMonitored = class java.util.HashSet@1d80bbaf
+      parentNotifier = null
+      pathOfEntryInParent = null
+      id = null
+      serialVersionUID = -5716655730663296309
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@4a4be9da
+    enclosingContainer = null
+    entryInEnclosingContainer = null
+    nestedOverlays = class java.util.concurrent.ConcurrentHashMap@5b5cce1e
+      serialVersionUID = 7249069246763182397
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_CAPACITY = 16
+      MAX_ARRAY_SIZE = 2147483639
+      DEFAULT_CONCURRENCY_LEVEL = 16
+      LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      MIN_TRANSFER_STRIDE = 16
+      RESIZE_STAMP_BITS = 16
+      MAX_RESIZERS = 65535
+      RESIZE_STAMP_SHIFT = 16
+      MOVED = -1
+      TREEBIN = -2
+      RESERVED = -3
+      HASH_BITS = 2147483647
+      NCPU = 4
+      serialPersistentFields = class java.io.ObjectStreamField[3]
+      table = null
+      nextTable = null
+      baseCount = 0
+      sizeCtl = 0
+      transferIndex = 0
+      cellsBusy = 0
+      counterCells = null
+      keySet = null
+      values = null
+      entrySet = null
+      U = class sun.misc.Unsafe@5eae53f3
+      SIZECTL = 20
+      TRANSFERINDEX = 32
+      BASECOUNT = 24
+      CELLSBUSY = 36
+      CELLVALUE = 144
+      ABASE = 16
+      ASHIFT = 2
+      keySet = null
+      values = null
+    cacheStore = class com.ibm.ws.artifact.overlay.internal.OverlayCache@4081f8aa
+      cache = class java.util.HashMap@3be03265
+      serialVersionUID = 4443220618296337968
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@220a39f8
+    parentOverlay = null
+    isPassThroughMode = true
+    serialVersionUID = -6650153487216279998
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@bfe566
+      strings[0] = "TraceComponent[com.ibm.ws.artifact.overlay.internal.DirectoryBasedOverlayContainerImpl,class com.ibm.ws.artifact.overlay.internal.DirectoryBasedOverlayContainerImpl,[archive.overlay],null,null]"
+  factoryHolder = class com.ibm.ws.adaptable.module.internal.AdaptableModuleFactoryImpl@6a24efb4
+    adapterFactoryService = class com.ibm.ws.adaptable.module.internal.AdapterFactoryServiceImpl@593f286
+      toType = "toType"
+      priv = class com.ibm.ws.kernel.service.util.SecureAction@2bccaced
+      containerHelperMap = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceSetMap@31dd4642
+      entryHelperMap = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceSetMap@5a5670c1
+      containerToTypes = class java.util.Collections$SynchronizedSet@5b4df174
+      entryToTypes = class java.util.Collections$SynchronizedSet@15289534
+      baseProperties = class org.apache.felix.scr.impl.helper.ReadOnlyDictionary@4e1c3e85
+      registration = class com.ibm.ws.kernel.service.util.ServiceRegistrationModifier@27a59fff
+      serialVersionUID = 292472261820243508
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@5eb5577a
+    containerFactory = class com.ibm.ws.artifact.internal.ArtifactContainerFactoryService@21b76e52
+      CATEGORY_PROP_NAME = "category"
+      ENTRY_KEY = "com.ibm.wsspi.artifact.ArtifactEntry"
+      helperMap = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceSetMap@167d72f5
+      contributorMap = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceSetMap@367a308a
+      helperCategoryMap = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceSetMap@4e32fa36
+      contributorCategoryMap = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceSetMap@622f09c8
+      categories = class java.util.Collections$SynchronizedSet@1fb835a2
+      baseProperties = class org.apache.felix.scr.impl.helper.ReadOnlyDictionary@78a1a8bf
+      registration = class com.ibm.ws.kernel.service.util.ServiceRegistrationModifier@219b1ed7
+      serialVersionUID = 6566424214406946230
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@412cce60
+    overlayContainerFactory = class com.ibm.ws.artifact.overlay.internal.OverlayContainerFactoryImpl@6c236c9f
+      containerFactory = class com.ibm.ws.artifact.internal.ArtifactContainerFactoryService@21b76e52
+      registeredContainers = class com.ibm.ws.artifact.overlay.internal.DirectoryBasedOverlayContainerRegistry@4d8c2a36
+      serialVersionUID = -6737526700663704564
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@68205d26
+    serialVersionUID = 4200251809856292987
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@52ccc2ea
+      strings[0] = "TraceComponent[com.ibm.ws.adaptable.module.internal.AdaptableModuleFactoryImpl,class com.ibm.ws.adaptable.module.internal.AdaptableModuleFactoryImpl,[archive.adaptable],null,null]"
+  delegate = class com.ibm.ws.artifact.overlay.internal.DirectoryBasedOverlayContainerImpl@4b8ca970
+  notifier = null
+  serialVersionUID = -5950528200509051684
+  $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@f0eff86
+    strings[0] = "TraceComponent[com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl,class com.ibm.ws.adaptable.module.internal.AdaptableContainerImpl,[archive.adaptable],null,null]"
+
